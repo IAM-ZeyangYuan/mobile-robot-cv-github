@@ -35,7 +35,7 @@ Extracts the position of circular markers from the target map, identifying the *
 3. **Dilation** — recovers the size of the markers after erosion
 4. **Connected-component labeling (CCL)** — separates the two blue markers into distinct components
 
-**Relevant outputs:** `img/blue_class.png`, `img/green_class.png`, `img/ero_blue.png`, `img/ero_green.png`, `img/dil_blue.png`, `img/dil_green.png`, `img/post_ccl.png`
+**Relevant outputs:** `images/blue_class.png`, `images/green_class.png`, `images/ero_blue.png`, `images/ero_green.png`, `images/dil_blue.png`, `images/dil_green.png`, `images/post_ccl.png`
 
 ---
 
@@ -49,7 +49,7 @@ Extracts the red boundary-defining lines from the target map, providing the **pa
 2. **Edge detection** — detects edges and prepares the image for line extraction
 3. **Line extraction (Hough Transform)** — extracts line-shaped edges from the edge-detected image
 
-**Relevant outputs:** `img/red_class.png`, `img/edge_detection.png`, `img/finite_lines.png`, `img/hough_plot.png`
+**Relevant outputs:** `images/red_class.png`, `images/edge_detection.png`, `images/finite_lines.png`, `images/hough_plot.png`
 
 ---
 
@@ -80,7 +80,7 @@ where $R$ is the turning radius and $\omega$ is the angular velocity of the robo
 - **Continuous acceleration** enforced throughout the trajectory to reduce mechanical stress on the robot's physical components
 - Velocity and acceleration profiles generated for both wheels and for the robot body
 
-**Relevant outputs:** `img/config.png`, `img/map_w_mobile.png`, `img/va_profile.png`, `img/body_v_profile.png`, `img/diffbot_motion.mp4`
+**Relevant outputs:** `images/config.png`, `images/map_w_mobile.png`, `images/va_profile.png`, `images/body_v_profile.png`, `images/diffbot_motion.mp4`
 
 ---
 
@@ -89,7 +89,7 @@ where $R$ is the turning radius and $\omega$ is the angular velocity of the robo
 ```
 .
 ├── index.html
-└── img/
+└── images/
     ├── background.png
     ├── map.png                  # Target map
     ├── blue_class.png           # Color classification — blue markers
