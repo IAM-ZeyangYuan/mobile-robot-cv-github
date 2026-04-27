@@ -1,17 +1,17 @@
-# Robot Vision with Mobile Robot
+# Computer Vision with Mobile Robot
 
-**Duration:** February 2025 – March 2025  
-**Tags:** `Robot Vision` · `Mobile Robot` · `Python`
+**Duration:** 02/2025 – 03/2025  
+**Tags:** `Computer Vision` · `Mobile Robot` · `Python`
 
 ---
 
 ## Objective
 
-Developed a robot vision system to extract locale and path information from map images. The extracted data is then used to plan and execute the trajectory of a virtual differential mobile robot.
+I developed a computer vision pipeline that extracts locale and path information from map images. The extracted data is then used to plan and execute the trajectory of a virtual differential mobile robot.
 
 ---
 
-## Pipeline Overview
+### Pipeline Overview
 
 ```
 Map Image
@@ -22,9 +22,24 @@ Map Image
                           (Kinematics + Trajectory Planning)
 ```
 
----
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src= "images/map.png" width="300"/><br/>
+      <sub>Example map image</sub>
+    </td>
+    <td align="center">
+      <img src="images/config.png" width="300"/><br/>
+      <sub>Modeled mobile robot</sub>
+    </td>
+    <td align="center">
+      <img src="images/animation.gif" width="300"/><br/>
+      <sub>Modeled motion along the map</sub>
+    </td>
+  </tr>
+</table>
 
-## 1. Robot Vision — Locale Extraction
+## 1. Computer Vision — Locale Extraction
 
 Extracts the position of circular markers from the target map, identifying the **start** and **end** points for the robot's motion.
 
@@ -45,11 +60,95 @@ Extracts the red boundary-defining lines from the target map, providing the **pa
 
 **Processing steps:**
 
+<!--
+
+<details>
+<summary>
+1. <strong>Color classification</strong> — preliminary noise filtering to isolate red lines
+</summary>
+
+<p align="center">
+  <img src="images/red_class.png" width="300"/><br/>
+  <sub>Post color classification (red lines)</sub>
+</p>
+
+</details>
+
+<details>
+<summary>
+2. <strong>Edge detection</strong> — detects edges and prepares the image for line extraction
+</summary>
+
+<p align="center">
+  <img src="images/edge_detection.png" width="300"/><br/>
+  <sub>Post edge detection (redlines)</sub>
+</p>
+
+</details>
+
+<details>
+<summary>
+3. <strong>Line extraction (Hough Transform)</strong> — to only extract line-shaped edges
+</summary>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src= "images/finite_lines.png" width="300"/><br/>
+      <sub>Post line extraction (red lines)</sub>
+    </td>
+    <td align="center">
+      <img src="images/hough_plot.png" width="300"/><br/>
+      <sub>Hough transform identifying edge elements</sub>
+    </td>
+  </tr>
+</table>
+
+</details>
+
+--->
+
+
 1. **Color classification** — preliminary noise filtering to isolate red lines
 2. **Edge detection** — detects edges and prepares the image for line extraction
-3. **Line extraction (Hough Transform)** — extracts line-shaped edges from the edge-detected image
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src= "images/red_class.png" width="200"/><br/>
+      <sub>Post color classification (red lines)</sub>
+    </td>
+    <td align="center">
+      <img src="images/edge_detection.png" width="200"/><br/>
+      <sub>Post edge detection (redlines)</sub>
+    </td>
+  </tr>
+</table>
 
+3. **Line extraction (Hough Transform)** — extracts line-shaped edges from the edge-detected image
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/hough_plot.png" width="200"/><br/>
+      <sub>Hough transform identifying edge elements</sub>
+    </td> 
+    <td align="center">
+      <img src= "images/finite_lines.png" width="200"/><br/>
+      <sub>Post line extraction (red lines)</sub>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+<!--
 **Relevant outputs:** `images/red_class.png`, `images/edge_detection.png`, `images/finite_lines.png`, `images/hough_plot.png`
+--->
 
 ---
 
@@ -84,7 +183,7 @@ where $R$ is the turning radius and $\omega$ is the angular velocity of the robo
 
 ---
 
-## File Structure
+<!--## File Structure
 
 ```
 .
@@ -111,6 +210,7 @@ where $R$ is the turning radius and $\omega$ is the angular velocity of the robo
 ```
 
 ---
+-->
 
 ## Future Work
 
