@@ -9,7 +9,7 @@
 
 I developed a computer vision pipeline that extracts locale and path information from map images. The extracted data is then used to plan and execute the trajectory of a virtual differential mobile robot.
 
----
+
 
 ### Pipeline Overview
 
@@ -24,7 +24,7 @@ Map Image
 
 <table align="center">
   <tr>
-    <td align="center">
+    <td align="center" border="0">
       <img src= "images/map.png" width="300"/><br/>
       <sub>Example map image</sub>
     </td>
@@ -38,6 +38,10 @@ Map Image
     </td>
   </tr>
 </table>
+
+
+
+
 
 ## 1. Computer Vision — Locale Extraction
 
