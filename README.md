@@ -22,24 +22,23 @@ Map Image
                           (Kinematics + Trajectory Planning)
 ```
 
-<div border="0">
-  <table align="center">
-    <tr>
-      <td align="center">
-        <img src= "images/map.png" height="300"/><br/>
-        <sub>Example map image</sub>
-      </td>
-      <td align="center">
-        <img src="images/config.png" height="300"/><br/>
-        <sub>Modeled mobile robot</sub>
-      </td>
-      <td align="center">
-        <img src="images/animation.gif" height="300"/><br/>
-        <sub>Modeled motion along the map</sub>
-      </td>
-    </tr>
-  </table>
-</div> 
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src= "images/map.png" height="300" width = "300"/><br/>
+      <sub>Example map image</sub>
+    </td>
+    <td align="center">
+      <img src="images/config.png" height="300" width = "300"/><br/>
+      <sub>Modeled mobile robot</sub>
+    </td>
+    <td align="center">
+      <img src="images/animation.gif" height="300" width = "300"/><br/>
+      <sub>Modeled motion along the map</sub>
+    </td>
+  </tr>
+</table>
 
 
 
