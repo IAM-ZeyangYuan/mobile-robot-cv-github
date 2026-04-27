@@ -113,7 +113,7 @@ Extracts the red boundary-defining lines from the target map, providing the **pa
 2. **Edge detection** — detects edges and prepares the image for line extraction
 <table align="center">
   <tr>
-    <td align="center">
+    <td align="center" style="border: none;">
       <img src= "images/red_class.png" width="200"/><br/>
       <sub>Post color classification (red lines)</sub>
     </td>
@@ -125,7 +125,7 @@ Extracts the red boundary-defining lines from the target map, providing the **pa
 </table>
 
 3. **Line extraction (Hough Transform)** — extracts line-shaped edges from the edge-detected image
-<table align="center">
+<table align="center" style="border: none;">
   <tr>
     <td align="center">
       <img src="images/hough_plot.png" width="200"/><br/>
