@@ -22,9 +22,9 @@ Map Image
                           (Kinematics + Trajectory Planning)
 ```
 
-<table align="center">
+<table align="center" border="0">
   <tr>
-    <td align="center" border="0">
+    <td align="center">
       <img src= "images/map.png" width="300"/><br/>
       <sub>Example map image</sub>
     </td>
